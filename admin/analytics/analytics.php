@@ -6,8 +6,8 @@ if (!isset($_SESSION['admin_role']) || ($_SESSION['admin_role'] !== 'Administrat
     header("Location: ../../login.php");
 } else {
     ob_start();
-    require_once '../DbConnection.php'; // Include the database connection file for image upload
-    include_once('../../include/Crud.php');
+    include_once '../DbConnection.php'; // Include the database connection file for image upload
+    include_once '../../include/Crud.php';
     $dbConnection = new DbConnection();
     $conn = $dbConnection->getConnection();
 ?>
