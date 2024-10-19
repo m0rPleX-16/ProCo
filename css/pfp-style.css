@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.wrapper {
+    display: flex;
+}
+::selection {
+    background-color: #BFD6C2;
+    color: #0C3B2E;
+  }
+
+.image-container {
+    width: 200px;
+    height:200px;
+}
+#saveButton {
+    border-color:#0C3B2E;
+    background-color: #0C3B2E;
+    color:#EFE9E1;
+}
+#saveButton:hover {
+    background-color:transparent;
+    color: #0C3B2E;
+}
+/* input focus */
+.row .form-control:focus {
+    border-color: #6D9773;
+    box-shadow: 0 0 0 0.25rem #6D9773; 
+}

@@ -1,0 +1,113 @@
+
+body {
+    background-color: #EFE9E1 !important;
+}
+
+h1, p {
+    font-family: 'Poppins', sans-serif ;
+    color: #290907;
+}
+::selection {
+    background-color: #BFD6C2;
+    color: #0C3B2E;
+  }
+#loginBtn {
+    color: #EFE9E1 !important;
+}
+
+.bg-holder {
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-fluid {
+    color: #EFE9E1;
+    width: 330px;
+    height: 330px;
+    max-width: 100%;
+    height: auto;
+}
+/* input bars */
+.input-group{
+    font-family: 'Poppins', sans-serif;
+}
+.form-control.custom-input {
+    border-radius: 15px;
+    background-color: transparent;
+    border-color:#0C3B2E;
+}
+.form-control.custom-input:focus {
+    border-radius: 15px;
+    background-color: transparent;
+    border-color:#0C3B2E;
+    
+}
+
+.input-group .form-control:focus {
+    border-color: #6D9773;
+    box-shadow: 0 0 0 0.25rem #6D9773; 
+}
+
+/* to display password */
+#showPassword .bx {
+    color: #fff;
+}
+
+#showPassword {
+    width: 60px; 
+    position: relative;
+}
+
+#showPassword.active {
+    background-color:#0C3B2E;
+    color: #fff;
+}
+
+#showPassword:hover::after {
+    content: "display password"; /* Text to display */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateY(-7%); /*horizontally center an element*/
+    transform: translateX(10%); /*horizontally center an element*/
+    background-color: #f8f9fa; 
+    color: #0C3B2E; 
+    font-size: 0.8rem; 
+    padding: 0.2rem 1rem; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1; /* ensure it's above the button */
+}
+/* log in button */
+.btn.btn {
+    background-color: #6E8658;
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.btn.btn:hover{
+    background-color: #0C3B2E;
+}
+
+#loginBtn:active {
+    background-color: #0C3B2E ;
+}
+
+.additional-info {
+    margin-top: 3rem ;
+}
+#signUpLink{
+    color:#290907;
+    font-weight: 600;
+}
+#signUpLink:hover{
+    color:#6D9773;
+}
+

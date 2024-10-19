@@ -1,0 +1,98 @@
+body {
+  background-color: #EFE9E1 !important;
+}
+.wrapper {
+  display: flex;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: #EBEBEB;
+  min-width: 0;
+}
+::selection {
+  background-color: #BFD6C2;
+  color: #0C3B2E;
+}
+/* Search bar */
+.navbar {
+  flex: 0 0 auto;
+}
+.navbar form {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+#search{
+  background-color: #EFE9E1;
+}
+.navbar form input[type="search"] {
+  width: 500px; 
+}
+.navbar form input[type="search"] {
+  border-radius: 50px; 
+}
+.container label {
+text-align: right;
+}
+/* table */
+.table-container {
+  max-height: 1200px;
+  overflow-y: auto;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+.table {
+  width: 100%; /* Set the table width to 100% */
+  border-collapse: collapse; /* Collapse table borders */
+}
+.table th, .table td {
+  padding: 8px; /* Add padding to table cells */
+  text-align: center; /* Align text to the left */
+  border: 1px solid #ddd; /* Add border to table cells */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow text */
+}
+/* resident */
+.custom-modal-header{
+  background-color:#BB8A52;
+  color: #EFE9E1;
+}
+#addButton {
+  border-color:#0C3B2E;
+  background-color: transparent;
+  color:#0C3B2E;
+}
+#addButton:hover{
+  background-color:#0C3B2E;
+  color: #EFE9E1;
+}
+#saveButton {
+  border-color:#0C3B2E;
+  background-color: transparent;
+  color:#0C3B2E;
+}
+#saveButton:hover {
+  background-color:#0C3B2E;
+  color: #EFE9E1;
+}
+#cancelButton {
+  border-color:#BB8A52;
+  background-color: transparent;
+  color:#BB8A52;
+}
+#cancelButton:hover {
+  background-color:#BB8A52;
+  color: #EFE9E1;
+}
+/* Modal */
+.custom-modal-dialog {
+  max-width: 100vw;
+}
+/* input focus */
+.modal-body .form-control:focus {
+  border-color: #6D9773;
+  box-shadow: 0 0 0 0.25rem #6D9773; 
+}

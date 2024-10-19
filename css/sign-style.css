@@ -1,0 +1,122 @@
+body {
+    background-color: #EFE9E1 !important;
+}
+
+h1, p {
+    font-family: 'Poppins', sans-serif;
+    color: #290907;
+}
+
+::selection {
+    background-color: #BFD6C2;
+    color: #0C3B2E;
+}
+
+#signinBtn {
+    color: #EFE9E1;
+}
+
+.bg-holder {
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: url(images/login-background.jpg) center/cover no-repeat;
+}
+
+.img-fluid {
+    color: #EFE9E1;
+    width: 330px;
+    height: 330px;
+    max-width: 100%;
+    height: auto;
+}
+
+.input-group, .form-control.custom-input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control.custom-input {
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: #0C3B2E;
+}
+
+.form-control.custom-input:focus {
+    border-color: #6D9773;
+    box-shadow: 0 0 0 0.25rem #6D9773;
+}
+
+#showPassword .bx,
+#showConfirmPassword .bx {
+    color: #fff;
+}
+
+#showPassword,
+#showConfirmPassword {
+    width: 60px;
+    position: relative;
+}
+
+#showPassword.active,
+#showConfirmPassword.active {
+    background-color: #0C3B2E;
+    color: #fff;
+}
+
+#showPassword:hover::after,
+#showConfirmPassword:hover::after {
+    content: "Display password";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateY(-7%) translateX(10%);
+    background-color: #f8f9fa;
+    color: #0C3B2E;
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#confirmPassSec {
+    font-size: 0.8rem;
+}
+
+.btn.btn {
+    background-color: #6E8658;
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.btn.btn:hover, 
+.btn.btn:active {
+    background-color: #0C3B2E;
+}
+
+#logInLink {
+    color: #290907;
+    font-weight: 600;
+}
+
+#logInLink:hover {
+    color: #6D9773;
+}
+
+.alert-autocloseable-add,
+.alert-autocloseable-error {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 9999;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.alert-autocloseable-add.show,
+.alert-autocloseable-error.show {
+    display: block;
+}
