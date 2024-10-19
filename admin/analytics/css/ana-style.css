@@ -1,0 +1,48 @@
+::selection {
+    background-color: #BFD6C2;
+    color: #0C3B2E;
+  }
+  .table .tdHead{
+    background-color: #BB8A52;
+    color: #f7f4ef;
+    font-weight: 600;
+    width: 300px;
+  }
+  .table .tdContent:hover {
+    background-color: #EFDFCD;
+    color: #0C3B2E;
+  }
+/* button */
+#addButton {
+    border-color:#0C3B2E;
+    background-color: transparent;
+    color:#0C3B2E;
+}
+#addButton:hover{
+    background-color:#0C3B2E;
+    color: #EFE9E1;
+}
+
+#saveButton {
+    border-color:#0C3B2E;
+    background-color: transparent;
+    color:#0C3B2E;
+}
+#saveButton:hover {
+    background-color:#0C3B2E;
+    color: #EFE9E1;
+}
+#cancelButton {
+    border-color:#BB8A52;
+    background-color: transparent;
+    color:#BB8A52;
+}
+#cancelButton:hover {
+    background-color:#BB8A52;
+    color: #EFE9E1;
+}
+/* input focus */
+.modal-body .form-control:focus {
+    border-color: #6D9773;
+    box-shadow: 0 0 0 0.25rem #6D9773; 
+}

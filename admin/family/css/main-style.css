@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+  top: 3px;
+  left: 5px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.wrapper {
+  display: flex;
+}
+
+::selection {
+  background-color: #BFD6C2;
+  color: #0C3B2E;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: #EFE9E1;
+  min-width: 0;
+}
+
+#sidebar {
+  width: 200px;
+  z-index: 1000;
+  background-color: #0C3B2E;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+
+/* Profile Connect Logo */
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.sidebar-logo img {
+  width: 100px;
+  height: 100px;
+
+}
+
+/* Sidebar contents */
+.sidebar-nav {
+  padding: 1rem 0;
+  flex: 1 1 auto;
+  /* grow, shrink,    */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.sidebar-footer {
+  margin-bottom: 20px;
+}
+
+.sidebar-footer p {
+  font-size: 10.5px;
+  color: #EFE9E1;
+}
+
+/* sidebar links */
+a.sidebar-link {
+  padding: 1rem 1.625rem;
+  color: #EFE9E1;
+  display: block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+  font-size: 1.1rem;
+  margin-right: .75rem;
+}
+a.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, .075);
+  border-left: 3px solid #BB8A52;
+}
+.sidebar-item .sidebar-dropdown {
+  position: relative;
+  margin-top: 2px;
+  width: 100%;
+}
+/* for the sidebar dropdown contents */
+.sidebar-link[data-bs-toggle="collapse"]::after {
+  border: solid;
+  border-width: 0 .075rem .075rem 0;
+  content: "";
+  display: inline-block;
+  padding: 2px;
+  position: relative;
+  left: 1rem;
+  top: 0rem;
+  transform: rotate(44deg);
+  transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+  transform: rotate(225deg);
+  transition: all .2s ease-out;
+}
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  background-color: #FDF8F3;
+  height: 3rem;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.navbar-expand .navbar-collapse {
+  min-width: 200px;
+}
+
+/* user */
+
+.avatar {
+  height: 25px;
+  width: 25px;
+  margin: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+/* logo */
+.navbar-logo {
+  height: 120px;
+  width: 120px;
+  margin-top: 3.9rem;
+}
+
+.navbar-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Dropdown of avatar */
+.navbar .dropdown-menu {
+  background-color: #0C3B2E;
+  right: 0;
+  left: -100px;
+}
+
+.dropdown-item span,
+.dropdown-item i {
+  position: relative;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-left: 7px;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, .075);
+  border-right: 3px solid #FFBA00;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-item {
+  bottom: 10px;
+}
+
+/* Events Content */
+.event-table,
+table {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #FDF8F3;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(12, 59, 46, 0.12);
+}
+
+#main-header {
+  background-color: #BB8A52;
+  color: #EFE9E1;
+  text-align: center;
+  border-bottom: 1px solid #9e7443;
+  font-size: 18px;
+  text-align: center;
+}
+
+#content-header {
+  height: 50px;
+  background-color: #BB8A52;
+  color: #EFE9E1;
+  font-style: italic;
+}
+
+.event-table th,
+.event-table td {
+  padding: 12px;
+}
+.event-table tbody tr:hover td {
+  background-color: #BB8A52;
+  color: #f7f4ef;
+}
+
+/*CALENDAR*/
+
+.wrapper #calendar {
+  width: 100%;
+  max-width: 540px;
+  background: #0C3B2E;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  margin: 0 auto 20px;
+  padding: 20px 30px 30px;
+}
+.wrapper #calendar header{
+  display: flex;
+  align-items: center;
+  padding: 30px 20px 0;
+  justify-content: space-between;
+}
+header p {
+  color: #EFE9E1;
+}
+header .icons{
+  margin-bottom:20px;
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+  color: #BB8A52;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #EFE9E1;
+  color: #0C3B2E;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+  margin-left: -40px
+}
+.calendar .weeks {
+  margin-left: -35px
+}
+.calendar li{
+  color: #EFE9E1;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+  color:#BB8A52;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #796E60;
+}
+.days li.inactive:hover{
+  color: #EFE9E1;
+}
+.days li.active{
+  color: #EFE9E1;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #BB8A52;
+}
+.days li:not(.active):hover::before{
+  background: #BB8A52;
+  
+}
+@media (max-width: 570px) {
+  .calendar ul li{
+    font-size: 14px;
+  }
+}
+
+/* todo list */
+
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #0C3B2E;
+  margin: 20px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todo-app h4{
+  color: #EFE9E1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.todo-app input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #BB8A52;
+  background: transparent;
+  padding: 10px;
+  font-size: 1rem;
+  color:#EFE9E1;
+}
+.todo-app button{
+  border: none;
+  outline: none;
+  background: #6D9773;
+  color: #EFE9E1;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+}
+.todo-app button:hover{
+  background: #BB8A52;
+}
+.todo-app ul li {
+  list-style:none;
+  font-size: 17px;
+  color: #EFE9E1;
+}
+
+.todo-app ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 20px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+.todo-app ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(../images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top:12px;
+  left: -30px;
+
+}
+.todo-app ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.todo-app ul li.checked::before {
+  background-image: url(../images/checked.png);
+}
+.todo-app ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #EFE9E1;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  
+}
+.todo-app ul li span:hover {
+  color: #0C3B2E;
+  background: #AC7E4A;
+}
+
+
+/* footer */
+.footer,
+col-6,
+col-3 {
+  font-size: 12px;
+}
+
+.footer,
+p {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 100%;
+    order: 2;
+    margin-top: 20px;
+  }
+}
