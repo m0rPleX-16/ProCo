@@ -32,10 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["admin_id"] = $admin["admin_id"];
         $_SESSION["admin_role"] = $admin["type"];
         
-        // Log the login action for admin users
         if ($_SESSION["admin_role"] === "Captain" || $_SESSION["admin_role"] === "Kagawad" || $_SESSION["admin_role"] === "Administrator") {
-            $user = $admin["type"]; // Change this to the appropriate column based on your database structure
-            $action = $_SESSION["admin_role"] . " logged in"; // Log the role of the admin user
+            $user = $admin["type"];
+            $action = $_SESSION["admin_role"] . " logged in";
             logAction($mysqli, $user, $action);
         }
 
@@ -55,7 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
     }
 
-    // Check staff members
     $sql = "SELECT * FROM staff_tb WHERE email = '$email'";
     $result = $mysqli->query($sql);
 
@@ -72,11 +70,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["staff_role"] = $staff["type"];
         $_SESSION["status"] = $staff["status"];
 
-        // Log the login action for staff members
         if ($_SESSION["staff_role"] === "Staff") {
             $user = $staff["Staff_Name"];
-            $role = $_SESSION["staff_role"]; // Get the role from session
-            $action = "Logged in as $role $user"; // Log the login action with role information
+            $role = $_SESSION["staff_role"];
+            $action = "Logged in as $role $user"; 
             logAction($mysqli, $user, $action);
         }
 
